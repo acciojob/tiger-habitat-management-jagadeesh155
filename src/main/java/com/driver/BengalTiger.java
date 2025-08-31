@@ -1,24 +1,20 @@
-package com.driver;
-
 public class BengalTiger implements Tiger {
-    @Override
-    public String getType() {
-        return "Bengal Tiger";
+    private String color;
+    private double avgWeight;
+    private String climate;
+
+    public BengalTiger(String color, double avgWeight, String climate) {
+        this.color = color;
+        this.avgWeight = avgWeight;
+        this.climate = climate;
     }
 
     @Override
-    public String getColor() {
-        return "Orange with black stripes";
-    }
-
+    public String getType() { return "Bengal"; }
     @Override
-    public double getAverageWeight() {
-        return 220.0;
-    }
-
+    public String getColor() { return color; }
     @Override
-    public String getPreferredClimate() {
-        return "Subtropical";
-    }
+    public double getAverageWeight() { return avgWeight; }
+    @Override
+    public String getPreferredClimate() { return climate; }
 }
-
