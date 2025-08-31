@@ -1,23 +1,20 @@
-package com.driver;
-
 public class SiberianTiger implements Tiger {
-    @Override
-    public String getType() {
-        return "Siberian Tiger";
+    private String color;
+    private double avgWeight;
+    private String climate;
+
+    public SiberianTiger(String color, double avgWeight, String climate) {
+        this.color = color;
+        this.avgWeight = avgWeight;
+        this.climate = climate;
     }
 
     @Override
-    public String getColor() {
-        return "White with black stripes";
-    }
-
+    public String getType() { return "Siberian"; }
     @Override
-    public double getAverageWeight() {
-        return 300.0;
-    }
-
+    public String getColor() { return color; }
     @Override
-    public String getPreferredClimate() {
-        return "Cold";
-    }
+    public double getAverageWeight() { return avgWeight; }
+    @Override
+    public String getPreferredClimate() { return climate; }
 }
